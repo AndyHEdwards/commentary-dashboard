@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Comment from './Comment';
+import KeyMoments from './KeyMoments';
 
-let comment = {
+let moments = [{
   time: '21',
   description: 'Goal'
-}
+}, {
+  time: '47',
+  description: 'Save'
+}];
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Comment comment={comment} />, div);
+  ReactDOM.render(<KeyMoments keyMoments={moments} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

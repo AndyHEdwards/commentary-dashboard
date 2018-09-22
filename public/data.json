@@ -29,15 +29,15 @@
 		"id": "7"
 	}],
 	"keyMoments": [{
-		"text": "Yellow card",
+		"description": "Yellow card",
 	  "time": "12",
 		"commentId": "1"
 	}, {
-		"text": "Goal",
+		"description": "Goal",
 	  "time": "21",
 		"commentId": "4"
 	}, {
-		"text": "Save",
+		"description": "Save",
 	  "time": "28",
 		"commentId": "5"
 	}]
