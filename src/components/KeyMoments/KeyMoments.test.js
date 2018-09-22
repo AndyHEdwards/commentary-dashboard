@@ -10,8 +10,10 @@ let moments = [{
   description: 'Save'
 }];
 
+let handleHighlightComment = () => '';
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<KeyMoments keyMoments={moments} />, div);
+  ReactDOM.render(<KeyMoments keyMoments={moments} handleHighlightComment={handleHighlightComment} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
