@@ -7,8 +7,10 @@ let moment = {
   description: 'Goal'
 }
 
+let handleClick = () => '';
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Moment moment={moment} />, div);
+  ReactDOM.render(<Moment moment={moment} handleClick={handleClick} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

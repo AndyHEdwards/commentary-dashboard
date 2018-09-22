@@ -7,9 +7,11 @@ import KeyMoments from '../KeyMoments/KeyMoments';
 export default class Dashboard extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       comments: [],
-      keyMoments: []
+      keyMoments: [],
+      highlightedComment: ''
     };
   }
 
@@ -26,11 +28,15 @@ export default class Dashboard extends React.Component {
     });
   }
 
+  highlightComment(commentId) {
+    this.setState({ highlightedComment: commentId });
+  }
+
   render() {
     return (
       <div id='dash-board'>
-        <LiveCommentary comments={this.state.comments} />
-        <KeyMoments keyMoments={this.state.keyMoments} />
+        <LiveCommentary comments={this.state.comments} highlightedComment={this.state.highlightedComment} />
+        <KeyMoments keyMoments={this.state.keyMoments} handleHighlightComment={this.highlightComment.bind(this)} />
       </div>
     );
   }
