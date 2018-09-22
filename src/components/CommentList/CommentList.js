@@ -3,13 +3,13 @@ import './CommentList.css';
 
 import CommentListItem from '../CommentListItem/CommentListItem';
 
-const CommentList = () => {
+const CommentList = (props) => {
   return (
     <div id='comment-list'>
-      <CommentListItem />
-      <CommentListItem />
-      <CommentListItem />
-      <CommentListItem />
+      <h1 className='comment-list__heading'>Live Commentary</h1>
+      {props.comments.map((comment, index) => {
+        return <CommentListItem comment={comment} key={index} />
+      })}
     </div>
   );
 }
