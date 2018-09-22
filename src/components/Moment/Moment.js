@@ -5,12 +5,12 @@ export default class Moment extends React.Component {
   constructor(props) {
     super(props);
 
-    this.highlightComment = this.props.handleClick.bind(this, this.props.moment.commentId);
+    this.selectMoment = this.props.handleClick.bind(this, this.props.moment.id, this.props.moment.commentId);
   }
 
-  render() {
+  render(props) {
     return (
-      <div className='moment' onClick={this.highlightComment}>
+      <div className={"moment" + (this.props.selectedMoment === this.props.moment.id ? ' highlight' : '')} onClick={this.selectMoment}>
         <div className='moment__time'>{this.props.moment.time}</div>
         <p className='moment__description'>{this.props.moment.description}</p>
       </div>

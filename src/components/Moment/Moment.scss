@@ -2,7 +2,13 @@
   display: flex;
   align-items: center;
 
+  padding: 5px;
   cursor: pointer;
+
+  &.highlight {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+  }
 }
 
 .moment__time {

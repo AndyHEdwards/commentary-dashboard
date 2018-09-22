@@ -17,11 +17,11 @@
 		"id": "4"
 	}, {
 		"time": "28",
-		"description": "Save!! Sanches saves a goal.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 		"id": "5"
 	}, {
 		"time": "29",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"description": "Save!! Sanches saves a goal.",
 		"id": "6"
 	}, {
 		"time": "31",
@@ -29,16 +29,19 @@
 		"id": "7"
 	}],
 	"keyMoments": [{
+		"id": "1",
 		"description": "Yellow card",
 	  "time": "12",
 		"commentId": "1"
 	}, {
+		"id": "2",
 		"description": "Goal",
 	  "time": "21",
 		"commentId": "4"
 	}, {
+		"id": "3",
 		"description": "Save",
 	  "time": "28",
-		"commentId": "5"
+		"commentId": "6"
 	}]
 }
