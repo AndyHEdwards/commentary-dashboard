@@ -1,10 +1,11 @@
 import React from 'react';
 import './CommentListItem.css';
 
-const CommentListItem = () => {
+const CommentListItem = (props) => {
   return (
     <div className='comment-list-item'>
-      <p>Dier goes into the book in what is the first yellow card of the game</p>
+      <div className='comment-list-item__time'>{props.comment.time}</div>
+      <p className='comment-list-item__description'>{props.comment.description}</p>
     </div>
   );
 }

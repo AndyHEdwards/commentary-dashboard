@@ -1,3 +1,16 @@
 .comment-list-item {
+  display: flex;
+  align-items: center;
+}
 
+.comment-list-item__time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 25px;
+  background-color: powderBlue;
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
 }
