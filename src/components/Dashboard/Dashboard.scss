@@ -1,3 +1,9 @@
 #dash-board {
+  display: flex;
+
   padding: 10px;
+
+  #live-commentary {
+    max-width: 700px;
+  }
 }
