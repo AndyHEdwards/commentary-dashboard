@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentList from './CommentList';
+import LiveCommentary from './LiveCommentary';
 
 let comments = [{
   time: '21',
@@ -12,6 +12,6 @@ let comments = [{
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<CommentList comments={comments} />, div);
+  ReactDOM.render(<LiveCommentary comments={comments} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

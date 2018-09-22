@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 
-import CommentList from '../CommentList/CommentList';
+import LiveCommentary from '../LiveCommentary/LiveCommentary';
 
 export default class Dashboard extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <div id='dash-board'>
-        <CommentList comments={this.state.comments} />
+        <LiveCommentary comments={this.state.comments} />
       </div>
     );
   }
